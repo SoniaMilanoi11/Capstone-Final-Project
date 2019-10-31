@@ -465,15 +465,15 @@ export default function(User) {
     })
       .flatMap(token => {
         let renderAuthEmail = renderSignInEmail;
-        let subject = 'Your sign in link for freeCodeCamp.org';
+        let subject = 'Your sign in link for *sitename*';
         if (isSignUp) {
           renderAuthEmail = renderSignUpEmail;
-          subject = 'Your sign in link for your new freeCodeCamp.org account';
+          subject = 'Your sign in link for your new *sitename* account';
         }
         if (newEmail) {
           renderAuthEmail = renderEmailChangeEmail;
           subject = dedent`
-            Please confirm your updated email address for freeCodeCamp.org
+            Please confirm your updated email address for *sitename*
           `;
         }
         const { id: loginToken, created: emailAuthLinkTTL } = token;
