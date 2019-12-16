@@ -1,7 +1,7 @@
 # Capstone-Final-Project
 Sonia Milanoi Capstone Project; Minerva Schools at KGI '20
 
-## Testing the Code Locally
+## Instructions for Testing the Code Locally
 In order to run this code locally, you will need to set up a local server. This code can not be run locally without setting up a local server because it contains asynchronous requests. Some browsers (including Chrome) will not run async requests (see Fetching data from the server) if you just run the example from a local file. This is because of security restrictions (for more on web security, read Website security).
 To get around the problem of async requests, we need to test such examples by running them through a local web server. One of the easiest ways to do this for our purposes is to use Python's SimpleHTTPServer module.
 
