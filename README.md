@@ -3,7 +3,7 @@ Sonia Milanoi Capstone Project; Minerva Schools at KGI '20
 
 ## Instructions for Testing the Code Locally
 In order to run this code locally, you will need to set up a local server. This code can not be run locally without setting up a local server because it contains asynchronous requests. Some browsers (including Chrome) will not run async requests (see Fetching data from the server) if you just run the example from a local file. This is because of security restrictions (for more on web security, read Website security).
-To get around the problem of async requests, we need to test such examples by running them through a local web server. One of the easiest ways to do this for our purposes is to use Python's SimpleHTTPServer module.
+To get around the problem of async requests, we need to test such examples by running them through a local web server. One of the easiest ways to do this for our purposes is to use Python's SimpleHTTPServer module.You can use several different approaches to creating a server, but I beieve the Pythonic approach is simplest, and since we are going to use Python within the tutorial, I decided on this as the best approach.
 
 To do this:
 
@@ -41,13 +41,7 @@ By default, this will run the contents of the directory on a local web server, o
 To run the server side languages locally:
 Python's SimpleHTTPServer (python 2.0) http.server (python 3.0) module is useful, but it doesn't know how to run code written in languages such as Python, PHP or JavaScript. To handle that you'll need something more — exactly what you'll need depends on the server-side language you are trying to run. Here are a few examples:
 
-To run Node.js (JavaScript) server-side code, you'll need to use raw node or a framework built on top of it. Express is a good choice — see Express Web Framework (Node.js/JavaScript).
-To run PHP server-side code, launch PHP's built-in development server:
-
-  $ cd path/to/your/php/code
-  $ php -S localhost:8000
-
-
-Python is used here because the tutorial will be based in Python. 
-
 To run Python server-side code, you'll need to use a Python web framework. You can find out how to use the Django framework by reading Django Web Framework (Python). Flask is also a good (slightly less heavyweight) alternative to Django. To run this you'll need to install Python/PIP, then install Flask using pip3 install flask. At this point you should be able to run the Python Flask examples using for example python3 python-example.py, then navigating to localhost:5000 in your browser.
+
+
+To run Node.js (JavaScript) server-side code, you'll need to use raw node or a framework built on top of it. Express is a good choice — see Express Web Framework (Node.js/JavaScript).
