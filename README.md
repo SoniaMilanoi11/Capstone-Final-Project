@@ -46,3 +46,8 @@ To run PHP server-side code, launch PHP's built-in development server:
 
   $ cd path/to/your/php/code
   $ php -S localhost:8000
+
+
+Python is used here because the tutorial will be based in Python. 
+
+To run Python server-side code, you'll need to use a Python web framework. You can find out how to use the Django framework by reading Django Web Framework (Python). Flask is also a good (slightly less heavyweight) alternative to Django. To run this you'll need to install Python/PIP, then install Flask using pip3 install flask. At this point you should be able to run the Python Flask examples using for example python3 python-example.py, then navigating to localhost:5000 in your browser.
